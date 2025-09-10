@@ -1,2 +1,22 @@
 @import "tailwindcss";
 
+
+@layer base {
+  body {
+    @apply font-primary bg-primary text-white leading-loose;
+  }
+}
+
+@theme {
+  --color-primary: '#1c1c22',
+  --color-secondary: '#1c1c1e',
+  --color-accent: '#e2e2e2',
+  --color-success: '#0070f3',
+  --color-warning: '#f5a623',
+  --color-error: '#ff0000',
+  --font-primary: 'JetBrains Mono', monospace,
+}
+
+body {
+  font-family: var(--font-jetbrainsMono), monospace;
+}
